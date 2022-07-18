@@ -12,7 +12,13 @@ public class StringStudy2
 		//jpg, png, gif, jpeg, 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("파일이름과 확장자를 입력하세요");
+		
+		
+		 
 		String input = sc.next();
+		int index = input.lastIndexOf(".");
+		input=input.substring(index);
+		
 		
 		
 		if(input.indexOf(".jpg") !=-1 || input.indexOf(".png") !=-1 || input.indexOf(".gif") !=-1
