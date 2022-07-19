@@ -21,11 +21,12 @@ public class StringMain
 //		StringStudy ss = new StringStudy();
 //		ss.studyCharAt();
 		StringStudy2 st2 = new StringStudy2();
+		StringStudy3 st3 = new StringStudy3();
 //		st2.StudyIndexof();
 //		st2.StudyIndexOfEx1();
 //		st2.studySbustring();
-		st2.ex2();
-		
+//		st2.ex2();
+		st3.studySplit();
 	}
 
 }
