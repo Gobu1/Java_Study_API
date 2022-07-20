@@ -1,5 +1,7 @@
 package com.iu.lang.String.ex1;
 
+import java.util.StringTokenizer;
+
 public class WorkerService 
 {
 //	private String info;
@@ -19,19 +21,32 @@ public class WorkerService
 	
 		String info = sb.toString();
 		info = info.replace(", ", "-");
-		String []info2 = info.split("-");
-		WorkerDTO []workerDTOs= new WorkerDTO[info2.length/4];
-		for(int i=0; i<info2.length; i=i+4)
+		StringTokenizer st = new StringTokenizer(info, "-");
+		WorkerDTO []workerDTOs = new WorkerDTO[st.countTokens()/4];
+		int x=0;
+		while(st.hasMoreTokens())
 		{
 			WorkerDTO wd = new WorkerDTO();
-			wd.setName(info2[i]);
-			wd.setJob(info2[i+1]);
-			wd.setDepartment(info2[i+2]);
-			wd.setPhone(info2[i+3]);
-			workerDTOs[i/4]=wd;
+			wd.setName(st.nextToken());
 			
-			
+			wd.setDepartment(st.nextToken());
+			wd.setJob(st.nextToken());
+			wd.setPhone(st.nextToken());
+			workerDTOs [x++]=wd;
 		}
+//		String []info2 = info.split("-");
+//		WorkerDTO []workerDTOs= new WorkerDTO[info2.length/4];
+//		for(int i=0; i<info2.length; i=i+4)
+//		{
+//			WorkerDTO wd = new WorkerDTO();
+//			wd.setName(info2[i]);
+//			wd.setJob(info2[i+1]);
+//			wd.setDepartment(info2[i+2]);
+//			wd.setPhone(info2[i+3]);
+//			workerDTOs[i/4]=wd;
+//			
+//			
+//		}
 		
 		
 		
