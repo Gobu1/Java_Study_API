@@ -34,15 +34,15 @@ public class WeaheMain
 //		ar.add(cityDTO);
 //		ar.add(cityDTO2);
 //		
-//		ArrayList<CityDTO> ar = new ArrayList<>();
-//		ws.init(ar);
+		ArrayList<CityDTO> ar = new ArrayList<>();
+		ws.init(ar);
 //		
 ////		ws.add(ar);
 ////		
 //		wv.view(ar);
 		
-		ArrayList<String> ar1 = new ArrayList<>();
-		ArrayList<ArrayList<String>> ar2 = new ArrayList<>();
+//		ArrayList<String> ar1 = new ArrayList<>();
+//		ArrayList<ArrayList<String>> ar2 = new ArrayList<>();
 		
 	
 		

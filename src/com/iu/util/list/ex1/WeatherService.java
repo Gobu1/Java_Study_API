@@ -24,7 +24,6 @@ public class WeatherService
 	{
 		String data = sb.toString();
 		data=data.replace("-", ",");
-		
 		StringTokenizer st = new StringTokenizer(data, ",");
 		
 		while(st.hasMoreTokens())
